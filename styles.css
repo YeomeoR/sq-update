@@ -1,0 +1,86 @@
+body {
+  background-image: url('/images/pexels-peter-laskowski-3458997.jpg');
+  height: 100vw;
+  object-position: center;
+  object-fit: contain;
+}
+
+/* nav {
+  position: fixed;
+  display: grid;
+  grid-template-columns: 200px auto auto auto auto auto auto;
+  grid-template-rows: 65px 70px 65px;
+  top: 0;
+  transition: all 600ms ease-in-out;
+  background-color: transparent;
+  color: rgb(253, 4, 191);
+  width: 100vw;
+  height: 16.5vh;
+}
+
+ul {
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+}
+
+li {
+  padding: 15px;
+}
+
+li:hover {
+  font-weight: bold;
+  opacity: 1;
+  cursor: pointer;
+}
+
+#home {
+  grid-column: 2;
+  grid-row: 2;
+}
+#about {
+  grid-column: 3;
+  grid-row: 2;
+}
+#services {
+  grid-column: 3;
+  grid-row: 2;
+}
+#projects {
+  grid-column: 4;
+  grid-row: 2;
+}
+#contact {
+  grid-column: 5;
+  grid-row: 2;
+}
+#login {
+  grid-column: 6;
+  grid-row: 2;
+}
+
+.logo {
+  grid-column: 1;
+  grid-row: 1 / span 3;
+}
+
+.nav-active {
+  background-color: transparent;
+  opacity: 0.6;
+}
+
+span {
+  color: hotpink;
+  font-weight: bold;
+}
+
+.hero-container {
+  position: relative;
+  top: 10%;
+  left: 5%;
+}
+
+.hero-title {
+  color: rgb(107, 104, 104);
+} */
