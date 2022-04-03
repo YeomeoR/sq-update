@@ -1,7 +1,12 @@
 $(document).ready(function () {
+
+
   gsap.registerPlugin(ScrollTrigger);
 
-  gsap
+  let heroReveal = gsap.timeline();
+
+  
+  heroReveal
     .from('.hero-title', {
       // selector text, Array, or object
       y: 100, // any properties (not limited to CSS)
@@ -15,11 +20,6 @@ $(document).ready(function () {
       opacity: 1,
     });
 
-  let tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: '.hero-title',
-      start: 'top center',
-      markers: true,
-    },
-  });
+  
+
 });
