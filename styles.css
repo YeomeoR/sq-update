@@ -7,17 +7,67 @@
 
 .services-wrapper {
   display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto;
-  background-color: lightgreen;
+  grid-template-columns: 25vw 25vw 25vw;
+  grid-template-rows: 20vh 20vh;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 1vh;
+  padding: 8vh;
+  background-color: lightblue;
 }
 
 .service-container {
-  width: 100%;
-  background-color: pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   color: white;
+  border-radius: 20px;
+  width: 100%;
+  min-height: 20vh;
 }
 
-p {
+.r1 {
+   background-color: #e542c2;
+}
+.r2 {
+   background-color: #e542c2b5;
+}
+.r3 {
+  background-color: #e542c275;
+}
+
+.service-container:hover {
+  cursor: pointer;
+}
+
+.service-container h5 {
+  color: #fff;
+  font-size: 1.8rem;
+}
+.service-details {
   display: none;
+}
+.active {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  height: 60vh;
+  background-color: #e542c2;
+  opacity: 1;
+  z-index: 10;
+}
+.active h5 {
+  font-weight: 800;
+  font-size: 5rem;
+}
+.active p {
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+#cyber-essentials-logo {
+  margin-top: 5vh;
 }

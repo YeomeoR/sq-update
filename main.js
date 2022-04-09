@@ -5,7 +5,7 @@ $(document).ready(function () {
 
   let heroReveal = gsap.timeline();
 
-  
+
   heroReveal
     .from('.hero-title', {
       // selector text, Array, or object
@@ -22,4 +22,4 @@ $(document).ready(function () {
 
   
 
-});
+}); // end document ready
