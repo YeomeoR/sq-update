@@ -1,8 +1,19 @@
+.navbar-container {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+
 .hero-container {
   background-image: url('/images/pexels-peter-laskowski-3458997.jpg');
-  height: 100vh;
-  object-position: center;
-  object-fit: contain;
+  height: 120vh;
+  width: 100vw;
+  background-size: cover;
+  position: relative;
+  top: -5vh;
+  left: 0;
 }
 
 .services-wrapper {
