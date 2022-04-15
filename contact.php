@@ -8,24 +8,57 @@
     <title>Contact Us</title>
 </head>
 <body>
-    <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="POST" id="contact-form">
+    <form action="sendEmail.php" method="POST" id="contact-form">
 
         Name: <input type="text" name="name" id="name" placeholder="Your Name" required>
         Company: <input type="text" name="company" id="company" placeholder="Company Name">
         Email: <input type="email" name="email" id="email" placeholder="Your Email Address" required>
         Telephone Number: <input type="number" name="number" id="number" placeholder="Your Contact Number" required>
-        Message: <textarea name="message" placeholder="Message or Enquiry" rows="20" cols="100"></textarea>
+        Message: <textarea name="enquiry" placeholder="Message or Enquiry" rows="20" cols="100"></textarea>
 
         <button type="submit" id="submit-btn">Submit Enquiry</button>
     </form>
 <?php
-    $name = $_POST['name'];
-    $company = $_POST['company'];
-    $email = $_POST['email'];
-    $number = $_POST['number'];
-    $message = $_POST['message'];
 
-    var_dump('Name: ' . $name . ', Company: ' . $company . ', Email: ' . $email . ', Number: ' . $number . 'Message: ' . $message);
+// if (isset($_POST['submit'])){
+
+//     $name = $_POST['name'];
+//     $company = $_POST['company'];
+//     $email = $_POST['email'];
+//     $number = $_POST['number'];
+//     $enquiry = $_POST['enquiry'];
+//     $messageBody = '
+//         <html>
+//         <head>
+//         <title>SquareGain Enquiry Form</title>
+//         </head>
+//         <body>
+//         <p>This is a copy of your enquiry to Square Gain</p>
+//         <table>
+//         <tr>
+//         <th>Thank you for getting in contact with us, ' . $name .' from ' . $company .'.</th>
+//         </tr>
+//         <tr>
+//         <td>This is a copy of your message: </td>
+//         </tr>
+//         <tr>
+//         <td>Message: ' . $enquiry . '</td>
+//         </tr>
+//         </table>
+//         </body>
+//         </html>
+//         ';
+//     $headers[] = 'Cc: robyeomans1@gmail.com';
+
+//     var_dump('Name: ' . $name . ', Company: ' . $company . ', Email: ' . $email . ', Number: ' . $number . 'Message: ' . $enquiry);
+    
+//     $to = $email;
+//     $subject = "Email enquiry from SG website";
+//     $message = $messageBody;
+
+//     mail($email, $subject, $message, implode("\r\n", $headers) );
+//     echo 'mail has been sent to ' . $headers . ' and ' . $email . '.';
+// }
 ?>
     <div class="map-container">
         <!-- GoogleMaps -->
