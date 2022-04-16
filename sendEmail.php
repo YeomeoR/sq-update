@@ -50,7 +50,8 @@ if (isset($_POST['submit'])){
     $message = $messageBody;
 
     mail($email, $subject, $message, implode("\r\n", $headers) );
-    echo '<h1> Your email has been sent to ' . $headers . ' and ' . $email . '.</h1>';
+
+
 }
 
 ?>
