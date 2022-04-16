@@ -1,12 +1,12 @@
 <?php ?>
 <nav class="navbar-container">
-    <img src="/images/sqGainLogo.png.png" alt="" class="logo">
-    <ul>
-        <li id="home"><a href="home.php">Home</a></li>
-        <li id="about"><a href="about.php">About Us</a></li>
-        <li id="services"><a href="services.php">Services</a></li>
-        <li id="projects"><a href="projects.php">Projects</a></li>
-        <li id="contact"><a href="contact.php">Contact Us</a></li>
-        <li id="login"><a href="#">Login</a></li>
-    </ul>
+    
+    <div id="nav-items-container">
+        <div class="nav-items" id="home"><a href="home.php"><img src="/images/sqGainLogo.png.png" alt="logo" id="nav-logo"></a></div>
+        <div class="nav-items not-logo" id="about"><a href="about.php">About Us</a></div>
+        <div class="nav-items not-logo" id="services"><a href="services.php">Services</a></div>
+        <div class="nav-items not-logo" id="projects"><a href="projects.php">Projects</a></div>
+        <div class="nav-items not-logo" id="contact"><a href="contact.php">Contact Us</a></div>
+        <div class="nav-items not-logo" id="login"><a href="#">Login</a></div>
+    </div>
 </nav>
