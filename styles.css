@@ -1,19 +1,77 @@
+div {
+  /* border: 1px solid lightgreen; */
+}
+a {
+  text-decoration: none;
+}
 .navbar-container {
-  z-index: 10;
-  position: fixed;
-  top: 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 1vh;
+  /* border: 1px solid lightgreen; */
   left: 0;
   width: 100vw;
+  z-index: 10;
+}
+#nav-logo {
+  position: fixed;
+  top: 1vh;
+  left: 1vw;
+  scale: 0.7;
+  width: 7vw;
+}
+#nav-items-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  align-items: center;
+  grid-template-rows: 10vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.not-logo {
+  font-weight: bold;
+  font-size: 1.35em;
+  padding: 2vh 3vw;
+  /* margin: -2vw; */
+}
+.nav-items:hover {
+  font-weight: bold;
+  font-size: 1.35rem;
+  background-color: rgb(189, 185, 237);
+}
+
+.nav-items a {
+  color: hotpink;
 }
 
 .hero-container {
   background-image: url('/images/pexels-peter-laskowski-3458997.jpg');
-  height: 120vh;
+  height: 130vh;
   width: 100vw;
   background-size: cover;
   position: relative;
-  top: -5vh;
+  top: -15vh;
   left: 0;
+}
+#hero-title-container {
+  position: absolute;
+  margin-top: 24vh;
+  text-align: center;
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.icon-container {
+  display: flex;
+  justify-content: space-evenly;
+  /* border: 3px solid blue; */
+}
+.icon {
+  position: relative;
+  top: 40vh;
+  background-color: hotpink;
 }
 
 .services-wrapper {
@@ -39,10 +97,10 @@
 }
 
 .r1 {
-   background-color: #e542c2;
+  background-color: #e542c2;
 }
 .r2 {
-   background-color: #e542c2b5;
+  background-color: #e542c2b5;
 }
 .r3 {
   background-color: #e542c275;
