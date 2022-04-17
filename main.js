@@ -8,8 +8,8 @@ $(document).ready(function () {
       // selector text, Array, or object
       y: 100, // any properties (not limited to CSS)
       opacity: 0,
-      duration: 3, // seconds
-      delay: 0.5,
+      duration: 2, // seconds
+      delay: 0.3,
       ease: 'power2.inOut',
       stagger: 0.3, // stagger start times
     })
@@ -25,42 +25,47 @@ $(document).ready(function () {
     .fromTo(
       '#co2-cloud',
       { duration: 1, y: '-60vh', opacity: 0 },
-      { y: 0, opacity: 1, ease: 'bounce' },
+      { y: 0, opacity: 1, ease: 'back' },
     )
     .fromTo(
       '#house-health',
       { duration: 1, y: '-60vh', opacity: 0 },
-      { y: 0, opacity: 1, ease: 'bounce' },
+      { y: 0, opacity: 1, ease: 'back' },
     )
     .fromTo(
       '#circular-economy',
       { duration: 1, y: '-60vh', opacity: 0 },
-      { y: 0, opacity: 1, ease: 'bounce' },
+      { y: 0, opacity: 1, ease: 'back' },
     )
     .fromTo(
       '#link-local',
       { duration: 1, y: '-60vh', opacity: 0 },
-      { y: 0, opacity: 1, ease: 'bounce' },
+      { y: 0, opacity: 1, ease: 'back' },
     )
     .fromTo(
       '#bio-net-gain',
       { duration: 1, y: '-60vh', opacity: 0 },
-      { y: 0, opacity: 1, ease: 'bounce' },
+      { y: 0, opacity: 1, ease: 'back' },
     );
 
   ScrollTrigger.create({
     trigger: '.icon-container',
     start: 'bottom top',
     end: '+=500vh',
-    ease: 'bounce',
+    ease: 'back',
     scrub: true,
     stagger: 0.5,
     pin: '.hero-animation-container',
     onEnter: animationTimeline,
+    onEnterBack: animationTimelineReverse,
     markers: true,
   });
 
   function animationTimeline() {
     timeline.play();
+  }
+
+  function animationTimelineReverse() {
+    timeline.reverse();
   }
 }); // end document ready
