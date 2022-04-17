@@ -20,7 +20,7 @@
     <div class="hero-container">
       <div id="hero-title-container">
         
-        <h1 class="hero-title"><span>Advantage through sustainability</span><br /></h1>
+        <h1 class="hero-title"><span id="pink-advantage">Advantage through sustainability</span><br /></h1>
         <h1 class="hero-title">Company Sustainability </h1>
         <h1 class="hero-title">Net Zero Carbon</h1>
         <h1 class="hero-title">Circular Economy</h1>

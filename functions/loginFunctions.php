@@ -22,7 +22,7 @@ function checkLogin( $dbconn )  {
             $result = $stmt->get_result();
             while($row = $result->fetch_assoc()) {
                 $_SESSION['userForename'] = $row['Forename'];
-                $_SESSION['userSurename'] = $row['Surname'];
+                $_SESSION['userSurename'] = $row['Surname']; // deliberate spelling? register.js uses ['surname']
                 $_SESSION['userCompany'] = $row['Company'];
                 $_SESSION['userEmail'] = $row['Email'];
                 $user = true;
