@@ -18,18 +18,13 @@ $loggedIn = checkLogin( $dbconn ); // bool
         <div class="nav-items not-logo" id="projects"><a href="projects.php">Projects</a></div>
         <div class="nav-items not-logo" id="contact"><a href="contact.php">Contact Us</a></div>
         <?php if ( $loggedIn ) { ?>
-            <div class="nav-items not-logo" id="login"><a href="#">Login</a></div>
+            <div class="nav-items not-logo" id="logout"><a href="#">Log Out</a></div>
         <?php } else { ?>
-                <div class="nav-items not-logo" id="logout"><a href="#">Log Out</a></div>
+            <div class="nav-items not-logo" id="login"><a href="#">Login</a></div>
+            <a id="register-user" class="form-button" href="register.php">Sign Up</a>
         <?php } ?>
     </div>
 </nav>
 
-<input id="forename" type="text" placeholder="Forename *">
-<input id="surname" type="text" placeholder="Surname *">
-<input id="email" type="text" placeholder="Email *">
-<input id="phone-number" type="text" placeholder="Phone Number">
-<input id="company" type="text" placeholder="Company *">
-<input id="company-sector" type="text" placeholder="Company Sector">
-<input id="govt-sector" type="text" placeholder="Govt. Sector">
-<a id="register-user" class="form-button" href="/navbar.php">Sign Up</a>
+
+
