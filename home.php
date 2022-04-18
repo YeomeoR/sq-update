@@ -15,6 +15,7 @@
   include 'navbar.php';
   ?>
 <body>
+      <div class="wrapper scroll"></div>
   <div class="hero-animation-container">
     
     <div class="hero-container">

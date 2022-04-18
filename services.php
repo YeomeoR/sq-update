@@ -27,8 +27,8 @@
               <span>Climate Emergency and Carbon</span>
             </h5>
             <div class="service-details">
-              <div>
-                <img class="icons" src="" alt="weather" />
+           
+                <img class="icons" src="/images/iconmonstr-danger-8-48.png" alt="weather" />
                 <p>
                   • We help local authorities to turn their Declarations of
                   Climate Emergency into practical actions, that have
@@ -38,9 +38,9 @@
                   sustainability experts we have a successful track-record of
                   doing just that for leading councils including Tower Hamlets,
                   Hounslow and Hackney. <br />
-                                  </p>
+                </p>
                 <button class="contact-btn"><a href="contact.php">Contact Us</a></button>
-              </div>
+          
             </div>
           </div>
           <div class="service-container r2">
@@ -50,15 +50,13 @@
             
             <div class="service-details">
               <div>
-                <img class="icons" src="" alt="finance" />
+                <img class="icons" src="/images/iconmonstr-clipboard-11-32.png" alt="finance" />
                 <p>
                   • Developing internal competence is a key part of
                   organisational resilience. We provide training ranging from 30
                   minute catch-ups, through to detailed suites and training
                   programmes over a period of months, all of which is available
                   for Board Members to Operations. <br />
-                  
-                  
                 </p>
                 <button class="contact-btn"><a href="contact.php">Contact Us</a></button>
               </div>
@@ -69,8 +67,8 @@
               <span>Net Carbon Zero</span>
             </h5>
             <div class="service-details">
-              <div>
-                <img class="icons" src="" alt="building" />
+         
+                <img class="icons" src="/images/iconmonstr-leaf-1-48.png" alt="building" />
                 <p>
                   • Does your business need to take action on Net Zero targets
                   and Carbon action, but you don't know how? We explain what the
@@ -78,7 +76,7 @@
                   implement them in a practical way.
                 </p>
                 <button class="contact-btn"><a href="contact.php">Contact Us</a></button>
-              </div>
+            
             </div>
           </div>
           <div class="service-container r1">
@@ -87,15 +85,15 @@
             </h5>
 
             <div class="service-details">
-              <div>
-                <img class="icons" src="" alt="supply" />
+      
+                <img class="icons" src="/images/iconmonstr-networking-7-32.png" alt="supply" />
                 <p>
                   • Have you heard of 'Circular Economy' but aren't sure what it
                   means for your business? We cut through the terminology to
                   make it real for your company and implement practical actions.
                 </p>
                 <button class="contact-btn"><a href="contact.php">Contact Us</a></button>
-              </div>
+      
             </div>
           </div>
                     <div class="service-container r2">
@@ -104,10 +102,10 @@
             </h5>
 
             <div class="service-details">
-              <div>
-                <img class="icons" src="" alt="environmental" />
+     
+                <img class="icons" src="/images/iconmonstr-link-1-32.png" alt="environmental" />
                 <p>
-                  • If  class="contact-btn"you're unsure where to start with Sustainability and ESG,
+                  • If you're unsure where to start with Sustainability and ESG,
                   or what to include in your annual report or documents to
                   clients, we can help. • Find out more: More and more clients
                   and investors are considering company sustainability
@@ -124,7 +122,7 @@
                   • Reporting, Communication and Marketing
                 </p>
                 <button class="contact-btn"><a href="contact.php">Contact Us</a></button>
-              </div>
+             
             </div>
           </div>
           <div class="service-container r3">
@@ -133,26 +131,25 @@
             </h5>
             
             <div class="service-details">
-              <div>
-                <img class="icons" src="" alt="responsibility" />
+   
+                <img class="icons" src="/images/iconmonstr-clipboard-11-32.png" alt="responsibility" />
                 <p>
                   • If you're not quite ready to hire a full-time sustainability
                   staff member, then we can help fill the gap with flexible
                   support provided by our experts. <br />
-                  • Contact Us
                 </p>
                 <button class="contact-btn"><a href="contact.php">Contact Us</a></button>
-              </div>
+              
             </div>
           </div>
           
-          <div class="contact">
+          <div class="contact-pre-footer">
             <img
             id="cyber-essentials-logo"
             src="/images/Cyber Essentials Large.png"
             alt="cyber essentials"
             />
-            <button class="contact-btn"><a href="contact.php">Contact Us</a></button>
+            <button class="contact-btn" id="contact-pre-footer-btn"><a href="contact.php">Contact Us</a></button>
           </div>
         </div>
         <?php  
