@@ -5,15 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
     <link rel="stylesheet" href="styles.css" />
     <title>Document</title>
   </head>
   <body>
     <div>
       <div>
-        <h2>
-          <h1>What we excel at...</h1>
-        </h2>
+  
+        <h1>What we excel at...</h1>
+        
+      </div>
+       
         <div class="services-wrapper">
           <div class="service-container r1">
             <h5>
@@ -38,28 +42,19 @@
           </div>
           <div class="service-container r2">
             <h5>
-              <span>Company Sustainability Support</span>
+              <span>Training & e-Learning</span>
             </h5>
 
             <div class="service-details">
               <div>
-                <img class="icons" src="" alt="environmental" />
+                <img class="icons" src="" alt="finance" />
                 <p>
-                  • If you're unsure where to start with Sustainability and ESG,
-                  or what to include in your annual report or documents to
-                  clients, we can help. • Find out more: More and more clients
-                  and investors are considering company sustainability
-                  credentials in their decisions of who to work with, or where
-                  to invest. We can help you capture and present the
-                  sustainability information they're looking for in a
-                  structured, concise and effective way, to reflect your company
-                  at its best. <br />
-                  • Governance <br />
-                  • Strategy <br />
-                  • Stakeholder Engagement <br />
-                  • Action Plan Implementation <br />
-                  • Metrics and Data <br />
-                  • Reporting, Communication and Marketing
+                  • Developing internal competence is a key part of
+                  organisational resilience. We provide training ranging from 30
+                  minute catch-ups, through to detailed suites and training
+                  programmes over a period of months, all of which is available
+                  for Board Members to Operations. <br />
+                  • Contact Us
                 </p>
               </div>
             </div>
@@ -96,21 +91,30 @@
               </div>
             </div>
           </div>
-          <div class="service-container r2">
+                    <div class="service-container r2">
             <h5>
-              <span>Training & e-Learning</span>
+              <span>Company Sustainability Support</span>
             </h5>
 
             <div class="service-details">
               <div>
-                <img class="icons" src="" alt="finance" />
+                <img class="icons" src="" alt="environmental" />
                 <p>
-                  • Developing internal competence is a key part of
-                  organisational resilience. We provide training ranging from 30
-                  minute catch-ups, through to detailed suites and training
-                  programmes over a period of months, all of which is available
-                  for Board Members to Operations. <br />
-                  • Contact Us
+                  • If you're unsure where to start with Sustainability and ESG,
+                  or what to include in your annual report or documents to
+                  clients, we can help. • Find out more: More and more clients
+                  and investors are considering company sustainability
+                  credentials in their decisions of who to work with, or where
+                  to invest. We can help you capture and present the
+                  sustainability information they're looking for in a
+                  structured, concise and effective way, to reflect your company
+                  at its best. <br />
+                  • Governance <br />
+                  • Strategy <br />
+                  • Stakeholder Engagement <br />
+                  • Action Plan Implementation <br />
+                  • Metrics and Data <br />
+                  • Reporting, Communication and Marketing
                 </p>
               </div>
             </div>
@@ -124,7 +128,7 @@
               <div>
                 <img class="icons" src="" alt="responsibility" />
                 <p>
-                  • If you’re not quite ready to hire a full-time sustainability
+                  • If you're not quite ready to hire a full-time sustainability
                   staff member, then we can help fill the gap with flexible
                   support provided by our experts. <br />
                   • Contact Us
@@ -142,14 +146,11 @@
           </div>
         </div>
       </div>
+      
     </div>
 
 
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
+
     <script src="services.js"></script>
   </body>
 </html>

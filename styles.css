@@ -98,6 +98,7 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
   color: white;
   border-radius: 20px;
   width: 100%;
@@ -120,30 +121,22 @@ a {
 
 .service-container h5 {
   color: #fff;
-  font-size: 1.8rem;
+  font-size: 1.2em;
 }
 .service-details {
   display: none;
 }
-.active {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80vw;
-  height: 60vh;
-  background-color: #e542c2;
-  opacity: 1;
-  border-radius: 20px;
-  z-index: 10;
-}
+
 .active h5 {
   font-weight: 800;
-  font-size: 5rem;
+  font-size: 1.2em;
+  text-decoration: underline;
 }
 .active p {
   font-weight: 500;
-  font-size: 3rem;
+  font-size: 1em;
+  text-align: center;
+  padding: 1vw;
 }
 
 #cyber-essentials-logo {
