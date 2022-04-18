@@ -21,7 +21,7 @@ $loggedIn = checkLogin( $dbconn ); // bool
             <div class="nav-items not-logo" id="logout"><a href="#">Log Out</a></div>
         <?php } else { ?>
             <div class="nav-items not-logo" id="login"><a href="#">Login</a></div>
-            <a id="register-user" class="form-button" href="register.php">Sign Up</a>
+            <a id="go-to-register" class="form-button" href="register.php">Sign Up</a>
         <?php } ?>
     </div>
 </nav>
