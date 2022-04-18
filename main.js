@@ -8,8 +8,8 @@ $(document).ready(function () {
       // selector text, Array, or object
       y: 100, // any properties (not limited to CSS)
       opacity: 0,
-      duration: 3, // seconds
-      delay: 0.5,
+      duration: 2, // seconds
+      delay: 0.3,
       ease: 'power2.inOut',
       stagger: 0.3, // stagger start times
     })
@@ -24,43 +24,48 @@ $(document).ready(function () {
     .to('#hero-title-container', { opacity: 0 }, '<')
     .fromTo(
       '#co2-cloud',
-      { duration: 1, y: '-60vh', opacity: 0 },
-      { y: 0, opacity: 1, ease: 'bounce' },
+      { y: '-60vh', opacity: 0 },
+      { y: 0, opacity: 1, ease: 'power2.in' },
     )
     .fromTo(
       '#house-health',
-      { duration: 1, y: '-60vh', opacity: 0 },
-      { y: 0, opacity: 1, ease: 'bounce' },
+      { y: '-60vh', opacity: 0 },
+      { y: 0, opacity: 1, ease: 'power2.in' },
     )
     .fromTo(
       '#circular-economy',
-      { duration: 1, y: '-60vh', opacity: 0 },
-      { y: 0, opacity: 1, ease: 'bounce' },
+      { y: '-60vh', opacity: 0 },
+      { y: 0, opacity: 1, ease: 'power2.in' },
     )
     .fromTo(
       '#link-local',
-      { duration: 1, y: '-60vh', opacity: 0 },
-      { y: 0, opacity: 1, ease: 'bounce' },
+      { y: '-60vh', opacity: 0 },
+      { y: 0, opacity: 1, ease: 'power2.in' },
     )
     .fromTo(
       '#bio-net-gain',
-      { duration: 1, y: '-60vh', opacity: 0 },
-      { y: 0, opacity: 1, ease: 'bounce' },
+      { y: '-60vh', opacity: 0 },
+      { y: 0, opacity: 1, ease: 'power2.in' },
     );
 
   ScrollTrigger.create({
     trigger: '.icon-container',
     start: 'bottom top',
-    end: '+=500vh',
-    ease: 'bounce',
+    end: '+=700vh',
+    ease: 'power2.in',
     scrub: true,
-    stagger: 0.5,
+    // stagger: 0.1,
     pin: '.hero-animation-container',
     onEnter: animationTimeline,
+    onEnterBack: animationTimelineReverse,
     markers: true,
   });
 
   function animationTimeline() {
     timeline.play();
+  }
+
+  function animationTimelineReverse() {
+    timeline.reverse();
   }
 }); // end document ready
