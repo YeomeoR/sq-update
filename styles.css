@@ -214,17 +214,17 @@ a {
 /* scroll  */
 .scroll,
 .scroll::before {
-  position: absolute;
+  position: fixed;
   left: 50%;
   transform: translateX(-50%);
   margin-left: -2.8px;
   z-index: 999;
 }
 .scroll {
-  opacity: 0.3;
+  opacity: 0.5;
   width: 30px;
   height: 55px;
-  border: 4px solid rgb(31, 31, 31);
+  border: 4px solid rgb(249, 249, 249);
   border-radius: 25px;
   cursor: pointer;
   bottom: 2rem;
@@ -236,7 +236,7 @@ a {
   content: '';
   width: 6px;
   height: 6px;
-  background: rgb(31, 31, 31);
+  background: rgb(255, 255, 255);
   top: 10px;
   border-radius: 50%;
   animation: 1.5s scroll cubic-bezier(0.65, -0.55, 0.25, 1.5) infinite;
