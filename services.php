@@ -11,10 +11,13 @@
     <title>Document</title>
   </head>
   <body>
-    <div>
+    <div id="service-page-wrapper">
+    <?php 
+    include 'navbar.php';
+    ?>
       <div>
   
-        <h1>What we excel at...</h1>
+        <h1 id="excel-title">What we excel at...</h1>
         
       </div>
        
@@ -35,8 +38,8 @@
                   sustainability experts we have a successful track-record of
                   doing just that for leading councils including Tower Hamlets,
                   Hounslow and Hackney. <br />
-                  • Contact Us
-                </p>
+                                  </p>
+                <button class="contact-btn"><a href="contact.php">Contact Us</a></button>
               </div>
             </div>
           </div>
@@ -44,7 +47,7 @@
             <h5>
               <span>Training & e-Learning</span>
             </h5>
-
+            
             <div class="service-details">
               <div>
                 <img class="icons" src="" alt="finance" />
@@ -54,8 +57,10 @@
                   minute catch-ups, through to detailed suites and training
                   programmes over a period of months, all of which is available
                   for Board Members to Operations. <br />
-                  • Contact Us
+                  
+                  
                 </p>
+                <button class="contact-btn"><a href="contact.php">Contact Us</a></button>
               </div>
             </div>
           </div>
@@ -72,6 +77,7 @@
                   most beneficial steps are for your company, and then help you
                   implement them in a practical way.
                 </p>
+                <button class="contact-btn"><a href="contact.php">Contact Us</a></button>
               </div>
             </div>
           </div>
@@ -88,6 +94,7 @@
                   means for your business? We cut through the terminology to
                   make it real for your company and implement practical actions.
                 </p>
+                <button class="contact-btn"><a href="contact.php">Contact Us</a></button>
               </div>
             </div>
           </div>
@@ -100,7 +107,7 @@
               <div>
                 <img class="icons" src="" alt="environmental" />
                 <p>
-                  • If you're unsure where to start with Sustainability and ESG,
+                  • If  class="contact-btn"you're unsure where to start with Sustainability and ESG,
                   or what to include in your annual report or documents to
                   clients, we can help. • Find out more: More and more clients
                   and investors are considering company sustainability
@@ -116,6 +123,7 @@
                   • Metrics and Data <br />
                   • Reporting, Communication and Marketing
                 </p>
+                <button class="contact-btn"><a href="contact.php">Contact Us</a></button>
               </div>
             </div>
           </div>
@@ -123,7 +131,7 @@
             <h5>
               <span>Interim Sustainability Support</span>
             </h5>
-
+            
             <div class="service-details">
               <div>
                 <img class="icons" src="" alt="responsibility" />
@@ -133,21 +141,25 @@
                   support provided by our experts. <br />
                   • Contact Us
                 </p>
+                <button class="contact-btn"><a href="contact.php">Contact Us</a></button>
               </div>
             </div>
           </div>
-
+          
           <div class="contact">
             <img
-              id="cyber-essentials-logo"
-              src="/images/Cyber Essentials Large.png"
-              alt="cyber essentials"
+            id="cyber-essentials-logo"
+            src="/images/Cyber Essentials Large.png"
+            alt="cyber essentials"
             />
+            <button class="contact-btn"><a href="contact.php">Contact Us</a></button>
           </div>
         </div>
+        <?php  
+        include 'footer.php';
+        ?>
       </div>
       
-    </div>
 
 
 

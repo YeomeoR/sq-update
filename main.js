@@ -24,37 +24,37 @@ $(document).ready(function () {
     .to('#hero-title-container', { opacity: 0 }, '<')
     .fromTo(
       '#co2-cloud',
-      { duration: 1, y: '-60vh', opacity: 0 },
+      { y: '-60vh', opacity: 0 },
       { y: 0, opacity: 1, ease: 'back' },
     )
     .fromTo(
       '#house-health',
-      { duration: 1, y: '-60vh', opacity: 0 },
+      { y: '-60vh', opacity: 0 },
       { y: 0, opacity: 1, ease: 'back' },
     )
     .fromTo(
       '#circular-economy',
-      { duration: 1, y: '-60vh', opacity: 0 },
+      { y: '-60vh', opacity: 0 },
       { y: 0, opacity: 1, ease: 'back' },
     )
     .fromTo(
       '#link-local',
-      { duration: 1, y: '-60vh', opacity: 0 },
+      { y: '-60vh', opacity: 0 },
       { y: 0, opacity: 1, ease: 'back' },
     )
     .fromTo(
       '#bio-net-gain',
-      { duration: 1, y: '-60vh', opacity: 0 },
+      { y: '-60vh', opacity: 0 },
       { y: 0, opacity: 1, ease: 'back' },
     );
 
   ScrollTrigger.create({
     trigger: '.icon-container',
     start: 'bottom top',
-    end: '+=500vh',
+    end: '+=700vh',
     ease: 'back',
     scrub: true,
-    stagger: 0.5,
+    // stagger: 0.1,
     pin: '.hero-animation-container',
     onEnter: animationTimeline,
     onEnterBack: animationTimelineReverse,

@@ -20,29 +20,38 @@
     <div class="hero-container">
       <div id="hero-title-container">
         
-        <h1 class="hero-title"><span id="pink-advantage">Advantage through sustainability</span><br /></h1>
-        <h1 class="hero-title">Company Sustainability </h1>
-        <h1 class="hero-title">Net Zero Carbon</h1>
-        <h1 class="hero-title">Circular Economy</h1>
-        <h1 class="hero-title">Training & e-Learning</h1>
+        <h1 class="hero-title"><a href="services.php"><span id="pink-advantage">Advantage through sustainability</span></a><br /></h1>
+        <h1 class="hero-title"><a href="services.php">Company Sustainability</a></h1>
+        <h1 class="hero-title"><a href="services.php">Net Zero Carbon</a></h1>
+        <h1 class="hero-title"><a href="services.php">Circular Economy</a></h1>
+        <h1 class="hero-title"><a href="services.php">Training & e-Learning</a></h1>
 
       </div>
 
       <div class="icon-container">
-        <div class="icon" id="co2-cloud">
+        <div class="icon" id="co2-cloud"><a href="services.php">
           <img src="/images/iconmonstr-weather-91-48.png" alt="" >
+          </a>
         </div>
         <div class="icon" id="house-health">
+          <a href="services.php">
           <img src="/images/iconmonstr-home-10-32.png" alt="">
+          </a>
         </div>
         <div class="icon" id="circular-economy">
+          <a href="services.php">
           <img src="/images/iconmonstr-networking-2-48.png" alt="">
+          </a>
         </div>
         <div class="icon" id="link-local">
+          <a href="services.php">
           <img src="/images/iconmonstr-link-1-48.png" alt="">
+          </a>
         </div>
         <div class="icon" id="bio-net-gain">
+          <a href="services.php">
           <img src="/images/iconmonstr-tree-5-48.png" alt="">
+          </a>
         </div>
       </div>
     </div>
@@ -68,13 +77,4 @@
     <script src="main.js"></script>
 </body>
 
-<footer>
-        <div>
-      <a href="https://twitter.com/Square_Gain" target="blank"><img id="tweet" src="" alt=""/></a>
-     
-      <h6 mailto: rob@yeomeo.co.uk >Web Design by Yeomeo</h6>
-      <img src="" alt="" />
-      <h6 >yeomeo.co.uk</h6>
-    </div>
-</footer>
 </html>
