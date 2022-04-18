@@ -6,6 +6,7 @@ include "navbar.php";
 <input id="surname" type="text" placeholder="Surname *">
 <input id="email" type="text" placeholder="Email *">
 <input id="password" type="text" placeholder="Password *">
+<input id="password2" type="text" placeholder="Repeat password *">
 <input id="phone-number" type="text" placeholder="Phone Number">
 <input id="company" type="text" placeholder="Company *">
 <input id="company-sector" type="text" placeholder="Company Sector">

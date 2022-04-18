@@ -5,6 +5,7 @@ $(document).ready(function () {
         var fore = $('#forename').val();
         var sur = $('#surname').val();
         var email = $('#email').val();
+        var pass = $('#password').val();
         var phone = $('#phone-number').val();
         var company = $('#company').val();
         var companySect = $('#company-sector').val();
@@ -14,6 +15,7 @@ $(document).ready(function () {
             fore: fore,
             sur: sur,
             email: email,
+            pass: pass,
             phone: phone,
             company: company,
             companySect: companySect,

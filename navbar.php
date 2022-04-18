@@ -1,6 +1,5 @@
 <?php
-include 'functions/siteFunctions.php';
-include 'includes/constants.php';
+include 'includes/basics.php';
 include 'functions/loginFunctions.php';
 
 setSession();

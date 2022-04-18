@@ -1,4 +1,5 @@
 <?php
+include_once "functions/dbFunctions.php"
 
 /** check the userID is valid and get user info
  * if logged in, set session vars for user details:
@@ -38,4 +39,26 @@ function checkLogin( $dbconn )  {
     }
 
     return $user;
+}
+
+function checkPassword( $dbconn, $email, $pass ) {
+
+    $user = getRecordsSql( $dbconn, "select * from user inner join userpassword on user.ID = userpassword.ID where email = ?", array($email));
+
+    if ($user === false) {
+        return false;
+    }
+
+    $pepper = "a00sRRk1knf4oV9wnsMRyx2mx";
+    $salt = $user["Salt"];
+    
+    $pass = $salt . $pass . $pepper;
+    for ( $i = 0; $i < 10; ++$i) {
+        $pass = hash("sha512", $pass);
+    }
+
+    if ( $pass == $user["Password"] ) {
+        return true;
+    } else return false;
+
 }
