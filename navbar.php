@@ -20,6 +20,10 @@ $loggedIn = checkLogin( $dbconn ); // bool
             <div class="nav-items not-logo" id="logout"><a href="#">Log Out</a></div>
         <?php } else { ?>
             <div class="nav-items not-logo" id="login"><a href="#">Login</a></div>
+            <div display="hidden" class="login-drop-down">
+                <input type="text" class="username" placeholder="Username">
+                <input type="text" class="password" placeholder="Password">
+            </div>
             <a id="go-to-register" class="form-button" href="register.php">Sign Up</a>
         <?php } ?>
     </div>

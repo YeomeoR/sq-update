@@ -68,4 +68,21 @@ $(document).ready(function () {
   function animationTimelineReverse() {
     timeline.reverse();
   }
+
+  $('.login-drop-down').on('hover', function () {
+    $(this).html('<input type="text" class="email" placeholder="Email"><input type="text" class="password" placeholder="Password"><button class="login-button">Log in</button>')
+
+    $('.login-button').on('click', function () {
+      $.post("XHR/login.php", { user: $('.email').val(), pass: $('.password').val() }, function (response) {
+        if (response.status) {
+          console.log(response.msg)
+          window.location.href = "home.php";
+        } else {
+          console.log(response.msg)
+        }
+      });
+    });
+  });
+
+
 }); // end document ready
