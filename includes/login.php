@@ -1,7 +1,7 @@
 
 <?php 
 session_start();
-include 'loginFunctions.php'
+include 'loginFunctions.php';
 
 $_SESSION['status'] = "guest";
 
