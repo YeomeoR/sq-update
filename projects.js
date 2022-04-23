@@ -33,7 +33,7 @@ $(document).ready(function () {
   //   var btn = document.getElementById('myBtn');
 
   // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName('close')[0];
+  //   var span = document.getElementsByClassName('close')[0];
 
   // When the user clicks the button, open the modal
   //   btn.onclick = function () {
@@ -49,10 +49,15 @@ $(document).ready(function () {
   //     modal.style.display = 'none';
   //   };
 
+  $('span').on('click', function () {
+    $(modal).css({ display: 'none' });
+  });
   // When the user clicks anywhere outside of the modal, close it
-  window.onclick = function (event) {
-    // if (event.target == modal) {
-    //   modal.style.display = 'none';
-    // }
-  };
+  $(window).on('click', function (event) {
+    console.log('not in the event' + event.target);
+    if (event.target == modal) {
+      console.log('in the event' + event.target);
+      $(modal).css({ display: 'none' });
+    }
+  });
 }); // end document ready
