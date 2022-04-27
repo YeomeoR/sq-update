@@ -12,15 +12,17 @@
   
 
   <div id="projects-and-clients">
-
-    <div class="title-container">
-      <h1>Our Projects</h1>
+  <?php 
+  include 'navbar.php'
+  ?>
+    <!-- <div class="title-container">
+      <h1>Projects</h1>
       <p>
         Projects include consultancy, systems and product development, training
         services, event development and management. Selected recent projects are
         shown below.
       </p>
-    </div>
+    </div> -->
 
     <div class="projects-container">
       <button id="btn1">LEDNet <br /> & <br /> London Councils</button>
@@ -421,7 +423,9 @@
         <button>email</button>
       </div>
   </div>
-
+<?php 
+include 'footer.php';
+?>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="/projects.js"></script>
 </body>

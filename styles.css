@@ -212,10 +212,10 @@ a {
 }
 #projects-and-clients {
   background-image: url('/images/pexels-peter-laskowski-3458997.jpg');
-  height: 100vh;
+  height: 130vh;
   width: 100vw;
   background-size: cover;
-  position: fixed;
+  /* position: fixed; */
 }
 .title-container {
   display: flex;
@@ -238,9 +238,10 @@ a {
 .projects-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  grid-template-rows: 12vh 12vh 12vh 12vh 12vh;
-  grid-gap: 4vw;
+  grid-template-rows: 10vh 10vh 10vh 10vh 10vh;
+  grid-gap: 2vw;
   padding: 0 2vw;
+  margin-top: 5vh;
 }
 .projects-container button {
   background-color: #e542c2;
