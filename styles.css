@@ -211,7 +211,11 @@ a {
   background-color: rgb(56, 75, 56);
 }
 #projects-and-clients {
-  background-color: rgb(235, 232, 232);
+  background-image: url('/images/pexels-peter-laskowski-3458997.jpg');
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  position: fixed;
 }
 .title-container {
   display: flex;
@@ -219,10 +223,36 @@ a {
   justify-content: center;
   align-items: center;
 }
+.title-container h1 {
+  text-decoration: underline;
+  text-shadow: 1px 1px 1px #fff;
+  font-weight: 800;
+  color: darkslateblue;
+}
+.title-container p {
+  text-decoration: underline;
+  text-shadow: 1px 1px 1px #fff;
+  font-weight: 800;
+  color: darkslateblue;
+}
 .projects-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  grid-gap: 1vw;
+  grid-template-rows: 12vh 12vh 12vh 12vh 12vh;
+  grid-gap: 4vw;
+  padding: 0 2vw;
+}
+.projects-container button {
+  background-color: #e542c2;
+  color: white;
+  font-weight: 800;
+  border-radius: 12px;
+  box-shadow: 0 0 8px #4707d2;
+  text-shadow: 1px 1px #4707d2;
+}
+.projects-container button:hover {
+  background-color: #f280da;
+  scale: 1.02;
 }
 .project {
   border: 1px solid #ccc;
@@ -253,8 +283,8 @@ MODAL
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 
 /* Modal Content */
@@ -264,30 +294,43 @@ MODAL
   margin: auto;
   padding: 0;
   border: 1px solid #888;
+  border-radius: 22px;
   width: 80%;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
-  animation-duration: 0.4s
+  animation-duration: 0.4s;
 }
 
 /* Add Animation */
 @-webkit-keyframes animatetop {
-  from {top:-300px; opacity:0} 
-  to {top:0; opacity:1}
+  from {
+    top: -200px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
 
 @keyframes animatetop {
-  from {top:-300px; opacity:0}
-  to {top:0; opacity:1}
+  from {
+    top: -200px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
 
 /* The Close Button */
 .close {
   color: white;
   float: right;
-  font-size: 28px;
+  font-size: 32px;
   font-weight: bold;
 }
 
@@ -300,16 +343,20 @@ MODAL
 
 .modal-header {
   padding: 2px 16px;
-  background-color: #5cb85c;
+  border-radius: 12px 12px 0 0;
+  background-color: #e542c2;
   color: white;
 }
 
-.modal-body {padding: 2px 16px;}
+.modal-body {
+  padding: 2px 16px;
+}
 
 .modal-footer {
   padding: 2px 16px;
-  background-color: #5cb85c;
+  background-color: #e542c2;
   color: white;
+  border-radius: 0 0 12px 12px;
 }
 
 /* 

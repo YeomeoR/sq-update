@@ -5,8 +5,8 @@ function setSession() {
 
     if ( !isset($_SESSION) ) {
         session_start();
-        // $_SESSION['status'] => "guest";
-        // $_SESSION['sessionID'] => uniqid();
+        $_SESSION['status'] = "guest";
+        $_SESSION['sessionID'] = uniqid();
     } 
 
 }
