@@ -1,5 +1,7 @@
 <?php
-include 'includes/basics.php';
+include_once "includes/constants.php";
+include_once "functions/dbFunctions.php";
+include_once "functions/siteFunctions.php";
 include 'functions/loginFunctions.php';
 
 setSession();
@@ -21,8 +23,7 @@ $loggedIn = checkLogin( $dbconn ); // bool
         <?php } else { ?>
             <div class="nav-items not-logo" id="login"><a href="#">Login</a></div>
             <div display="hidden" class="login-drop-down">
-                <input type="text" class="username" placeholder="Username">
-                <input type="text" class="password" placeholder="Password">
+
             </div>
             <a id="go-to-register" class="form-button" href="register.php">Sign Up</a>
         <?php } ?>

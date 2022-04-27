@@ -1,6 +1,8 @@
 <?php
 
-include 'includes/basics.php';
+include_once "../includes/constants.php";
+include_once "../functions/dbFunctions.php";
+include_once "../functions/siteFunctions.php";
 
 $fore = $_POST['fore'];
 
@@ -23,7 +25,7 @@ $rows = getRecordsSQL($dbconn, "SELECT * FROM user WHERE Email = ?", array($emai
 
 // $stmt->close();
 
-if ( $rows !== false ) {
+if ( $rows === false ) { 
     $pepper = "a00sRRk1knf4oV9wnsMRyx2mx";
     $salt = uniqid();
     
@@ -35,10 +37,12 @@ if ( $rows !== false ) {
 
 
     addRecordSQL( $dbconn, "user",  array( "Forename", "Surname", "Email", "WorkPhone", "Company", "CompanySector", "GovtSector"),  
-                                    array( $fore, $sure, $email, $phone, $company, $companySect, $govtSect ) );
-    $ID = getRecordsSQL( $dbconn, "select ID where email = ?", array($email) )[0]["ID"];
-
-    addRecordSQL( $dbconn, "password", array( $ID, $pass, $salt) );
-
+                                    array( $fore, $sur, $email, $phone, $company, $companySect, $govtSect ) );
+    $ID = getRecordsSQL( $dbconn, "select ID from user where Email = ?", array($email) );
+    var_dump($ID[0]["ID"]);
+    $ID = $ID[0]["ID"];
+    addRecordSQL( $dbconn, "userpassword", array("ID", "Password", "Salt"), array( $ID, $pass, $salt) );
+    echo json_encode(array( 'status' => true, 'msg' => 'Thank you for registering, please login to continue!'));
+    
 }
-echo json_encode(array( 'status' => true, 'msg' => "Thank you for registering, please login to continue!"));
+echo json_encode(array( 'status' => false, 'msg' => 'This email is already registered, please use a different one!'));

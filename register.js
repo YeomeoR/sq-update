@@ -23,6 +23,7 @@ $(document).ready(function () {
         };
 
         $.post("XHR/registerUser.php", data, function (response) {
+            response = JSON.parse(response)
             if (response.status) {
                 console.log(response.msg)
                 // window.location.href = "login.php";

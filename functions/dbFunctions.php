@@ -9,37 +9,40 @@
  */
 function getRecordsSQL( $conn, $sql, $parameters ) {
 
-    $userStmt = $conn->prepare($sql);
+    $userStmt = $conn->prepare($sql) or die($conn->error);
 
     $paramString = "";
     foreach ( $parameters as $p) {
-        switch (gettype($p)) {
-            case "string" :
+        if ( $p != "" ) {
+
+            switch (gettype($p)) {
+                case "string" :
                 $paramString .= "s";
                 break;
             case "integer" :
                 $paramString .= "i";
                 break;
-            case "double" :
-                $paramString .= "d";
-                break;
-            default:
-                $paramString .= "s";
-                break;
-        } 
+                case "double" :
+                    $paramString .= "d";
+                    break;
+                    default:
+                    $paramString .= "s";
+                    break;
+            } 
+        }
     }
-
+            
     if ( $paramString != "" ) {
-        $stmt->bind_param($paramString, $parameters);
+        $userStmt->bind_param($paramString, ...$parameters);
     }
 
-    $stmt->execute();
-    $result = $stmt->get_result();
+    $userStmt->execute();
+    $result = $userStmt->get_result();
     while($row = $result->fetch_assoc()) {
         $rows[] = $row;
     }
     //fetching result would go here, but will be covered later
-    $stmt->close();
+    $userStmt->close();
 
     if ( isset($rows) ) {
         return $rows;
@@ -54,13 +57,13 @@ function getRecordsSQL( $conn, $sql, $parameters ) {
  * 
  * @author Karl
  */
-function addRecord( $conn, $table, $columns, $values ) {
+function addRecordSQL( $conn, $table, $columns, $values ) {
 
     
     $valueString = "";
     $valueQuestions = array();
     foreach ( $values as $p) {
-        append( $valueQuestions, "?");
+        array_push( $valueQuestions, "?");
         switch ( gettype($p) ) {
             case "string" :
                 $valueString .= "s";
@@ -77,14 +80,14 @@ function addRecord( $conn, $table, $columns, $values ) {
         } 
     }
 
-    $userStmt = $conn->prepare("insert into " . $table . "(" . implode(", ", $columns) . " values" . implode(", ", $valueQuestions) );
+    $userStmt = $conn->prepare("insert into " . $table . "(" . implode(", ", $columns) . ") values (" . implode(", ", $valueQuestions) . ")" );
     if ( $valueString != "" ) {
-        $stmt->bind_param($valueString, $values);
+        $userStmt->bind_param($valueString, ...$values);
     }
 
-    $stmt->execute();
-    $result = $stmt->get_result();
-    $stmt->close();
+    $userStmt->execute();
+    $result = $userStmt->get_result();
+    $userStmt->close();
 
     return $result;
 }
