@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+
+Author: Rob Yeomans
+
+Website: Brisko 
+
+Page: Careers / Vacancies -> Careers.php
+
+-->
+<jobVacancies> <!-- Outer container for all vacancies -->
+
+<!-- ******************** COPY FROM HERE - START OF NEW VACANCY  ************************** -->
+	<jobVacancy id="1"> <!-- vacancy container - increment id -->
+		<jobTitle>Your New Job Title</jobTitle>	<!-- vacancy / position / job -->
+		<salaryBand>£Salary to £Salary</salaryBand>	<!-- offered vacancy salary -->
+		<location>Canterbury, Kent, United Kingdom</location> <!-- location of site / vacancy -->
+		<content><![CDATA[<html>
+			<div class="para para1">
+				<p class="shortJobDescription">Supporting St Elizabeth Hospice Brisko are proud to support St Elizabeth Hospice, based in Ipswich, Suffolk. Improving life for those living with progressive and life-limiting illnesses through palliative care, the hospice's services cost £12.9 million to run every year. 30% of their services are commissioned by the NHS.</p> <br />
+				<p class="longJobDescription">The other 70% of the hospice's running costs come from fundraising events like the Midnight Walk (which our staff are looking forward to taking part in), the Christmas Day Dip (one we're hoping returns to the calendar in the future) and charitable donations from individuals and businesses. We're moved by stories such as Jake's, who with the help of Zest, a scheme which sees St Elizabeth Hospice work closely with the children's hospices to ensure young adults have a smooth transition into adult care, "gets to do the things he likes doing and has 'Jake time'" as explained by his mum Beckie. We continue to support the hospice in everything they do, through donations and would encourage other businesses and individuals that would like to do the same, to visit their donations page.</p>			<br />
+			</div>
+			<div class="learn-more para para2"> 
+            	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore quos recusandae impedit odit cum obcaecati beatae quidem laboriosam repudiandae minima! Dolorem labore molestias dolor nam iste adipisci itaque qui sit eius pariatur quidem ut ratione enim quibusdam vel? Velit veritatis excepturi! Maiores non odit totam illum reprehenderit commodi officia.<br /><br /> Saepe omnis asperiores soluta et <par></par>iatur! Similique facilis minus quia cupiditate explicabo sequi quas tenetur reiciendis reprehenderit impedit rerum fugit ex dicta possimus sit corrupti necessitatibus porro vel non optio fuga autem sunt. Rem eum iste quis quos mollitia officia tempora quasi animi hic veritatis omnis cupiditate veniam inventore commodi reiciendis molestias numquam facilis nihil autem modi necessitatibus placeat repellendus unde dolore deserunt nulla optio nisi consectetur fuga. <br />Hic accusantium magnam dolorem molestias odit sapiente unde fuga! Quaerat est impedit sint labore cupiditate veniam magnam nemo facere perspiciatis aperiam accusantium nihil reprehenderit omnis quae sequi.<br /><br /> Cupiditate illo repellendus optio iste enim laudantium esse alias! Voluptatum quas est omnis inventore assumenda illum earum temporibus perspiciatis perferendis sit rerum deserunt quibusdam dolorum eos hic iste officia eius soluta dignissimos debitis iure aliquid quos.<br /><br /> Vel praesentium distinctio quisquam repudiandae excepturi eveniet necessitatibus error officiis numquam sit corporis asperiores sint in. <br />Alias sed voluptatibus quisquam.</p>         
+            </div>
+		]]>
+		</content> <!-- end of description. para2 for extended 'learn more' description, para1 for basic vacancy info -->
+	</jobVacancy> <!-- end of vacancy.  -->
+	
+
+	<!-- ************************* TO HERE, AMEND DATA & PASTE BELOW THIS LINE  ************************* -->
+	
+	
+	<!-- ******************** COPY FROM HERE - START OF NEW VACANCY ************************** -->
+	<jobVacancy id="2"> <!-- vacancy container -->
+		<jobTitle>CEO - BRISKO</jobTitle>	<!-- vacancy / position / job -->
+		<salaryBand>£100,000 to £500,000</salaryBand>	<!-- offered vacancy salary -->
+		<location>Ipswich, Norfolk, United Kingdom</location> <!-- location of site / vacancy -->
+		<!-- REPLACE TEXT BETWEEN <p class="short-job-description">   ***ONLY IN HERE!!!***  </p> -->
+		<content><![CDATA[<html>
+			<div class="para para1">	
+				<p class="shortJobDescription">
+				
+					<!-- REPLACE THIS  -->
+					<!-- add: <br /> wherever space required between lines of text -->
+				
+				</p>
+			</div>
+			
+			<div class="learn-more para para2">  <!-- This section is revealed on click or LEARN MORE button -->
+            	<p>
+				
+					<!-- REPLACE THIS -->
+					<!-- add: <br /> wherever space required between lines of text -->
+				
+				</p>         
+            </div>
+		]]>
+		</content> <!-- end of description. para2 for extended 'learn more' description, para1 for basic vacancy info -->
+	</jobVacancy> <!-- end of vacancy.  -->
+	<!-- ************************* TO HERE, AMEND DATA & PASTE BELOW THIS LINE  ************************* -->
+	
+	
+</jobVacancies>  <!-- end of file -->
+
+
