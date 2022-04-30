@@ -9,13 +9,13 @@
 </head>
 <body>
   
+<?php include 'navbar.php';  ?>
 
+<h3>Advantage through sustainability</h3>
 
-    <h3>Advantage through sustainability</h3>
-
-      <span>
-          * Zero-Carbon
-      </span> 
+<span>
+  * Zero-Carbon
+</span> 
 
 
     <h3> Sustainable Finance</h3>
@@ -23,7 +23,7 @@
     <h3>* Wellbeing</h3>
 
     <h3>* Supply Chain</h3>
-     
+    
     <p>
       We are a sustainability consultancy focused on the built environment,
       working in partnership with our public and private sector clients to
@@ -32,9 +32,11 @@
     </p>
 
     <button>
-      Contact Us
+      <a href="contact.php">
+        Contact Us
+      </a>
     </button>
 
-    <img id="land1" src="" alt="" />
+      <?php include 'footer.php';  ?>
 </body>
 </html>
