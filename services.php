@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
-    <link rel="stylesheet" href="styles.css" />
+
     <title>Document</title>
   </head>
   <body>
