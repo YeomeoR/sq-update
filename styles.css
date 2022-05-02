@@ -117,7 +117,7 @@ a {
 .icon {
   position: relative;
   top: 40vh;
-  background-color: hotpink;
+  background-color: #ee69ab9c;
 }
 .icon:hover {
   cursor: pointer;
@@ -266,6 +266,42 @@ a {
 
 .description {
   display: none;
+}
+
+/* contact form */
+
+#content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(242, 241, 241);
+}
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 30vw;
+  padding: 0 4vw;
+  max-height: 80vh !important;
+}
+#submit-btn {
+  padding: 3vh 1vw;
+  background-color: #e542c2;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 1vh;
+  border-radius: 8px;
+}
+#submit-btn:hover {
+  scale: 1.02;
+  background-color: #f280da;
+  cursor: pointer;
+}
+.map-container {
+  display: flex;
+  align-self: center;
 }
 
 /*
